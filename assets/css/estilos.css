@@ -19,6 +19,7 @@ header{
   align-content: center;
   display: flex;
   box-sizing: border-box;
+  overflow:hidden;
 }
 header .logoPrincipal{
   display: block;
