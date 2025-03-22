@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+body{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Source Sans 3", serif;
+}
+header{
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 0;
+  background-color: #ececec;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+header .logoPrincipal{
+  display: block;
+  width: 180px;
+  height:70px;
+  background-image: url(../img/logoSegunditas.jpg);
+  font-size: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header div{
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 2px;
+  font-size: 25px;
+}
+header div a,
+header div a:visited{
+  color: #444;
+  text-decoration: none;
+}
+header nav{
+  width: 600px;
+  height: 100%;
+  top: 0;
+  position: relative;
+  right: 0%; /*Al terminar el maquetado el nav estará oculto fuera de la ventana y al darle click al menú de hamburguesa entra a la ventana con un right: 0; pero para poder navegar entre páginas lo dejaré en position relative*/
+  overflow: hidden;
+  padding: 20px;
+}
+header nav ul{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li{
+  list-style: none;
+}
+header nav ul li a,
+header nav ul li a:visited{
+  text-decoration: none;
+  color: #444;
+  font-size: 35px;
+}
+main h1,
+main h2{
+  width: 100%;
+  height: auto;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+}
+main .testimonios,
+main .circles{/*Estos circulos los alinearé después que podamos meter flex*/
+  width: 100%;
+  max-width: 1040px;
+  margin: 30px auto;
+  text-align: center;
+}
+main .circles a,
+main .circles a:visited,
+main .testimonios p{
+  width: 30%;
+  display: inline-block;/*Por ahora usaré display: inline-block hasta que tengamos permitido usar flex*/
+  text-decoration: none;
+  color: #444;
+}
+main .circles a img{
+  width: 100%;
+  display: block;
+}
+main .circles a span{
+  display: 100%;;
+  height: auto;
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 12px;
+  display: block;
+}
+.rastreo{
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 12px;
+}
+.rastreo::placeholder{
+  text-align: center;
+  font-weight: bold;
+}
+.whats{
+  font-size: 0;
+  width: 190px;
+  height: 80px;
+  background-image: url(../img/whats.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 10px;
+  position: fixed;
+  bottom: 10px;
+}
+footer{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  font-size: 25px;
+  background-color: #f0f0f0;
+}
+main .testimonios p img{
+  width: 30%;
+  display: block;
+}
+/*Esta sección quedará mejor acomodada con flex*/
+main .moduloExplicativo{
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 12px;
+}
+main .moduloExplicativo img{
+  width: 20%;
+  margin: 0;
+}
+main .moduloExplicativo p{
+  width: 70%;
+  height: auto;
+  margin: 0;
+  padding: 12px;
+}
+
