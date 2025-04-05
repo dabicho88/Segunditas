@@ -1,0 +1,87 @@
+@use '../base/variables';
+
+main{
+  .ache1{
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+    color: variables.$colorGris;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: lighter;
+  } 
+  .ache2{
+     @extend .ache1;
+  } 
+  .circles{
+    width: 100%;
+    max-width: 1040px;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    .vinculoCirculo{
+      width: 30%;
+      display: block;
+      text-decoration: none;
+      color: variables.$colorGris;
+      transition:variables.$velocidadTrans;
+      &:visited{
+      @extend .vinculoCirculo;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+      &:active{
+        transform: scale(1);
+        transition:.05s all ease;
+      }
+      img{
+        width: 100%;
+        display: block;
+      }
+    } 
+    span{
+      width: 100%;
+      margin: 0 auto;
+      box-sizing: border-box;
+      height: auto;
+      font-weight: bolder;
+      margin: 0 auto;
+      padding: 12px;
+      display: block;
+      font-size: 22px;
+    } 
+  }
+}
+@media screen and (max-width:768px){
+main{
+  .ache1{
+    font-size: 36px;
+    line-height: 40px;
+  } 
+  .ache2{
+     @extend .ache1;
+  } 
+  .circles{
+    flex-wrap: wrap;
+    .vinculoCirculo{
+      width: 100%;
+      img{
+        max-width: 300px;
+        margin: 20px auto 0 auto;
+      }
+    }
+  }
+}
+}
+
+
+
+ 

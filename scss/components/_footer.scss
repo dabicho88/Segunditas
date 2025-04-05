@@ -1,0 +1,30 @@
+@use '../base/variables';
+
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 12px;
+  font-size: 25px;
+  background-color: variables.$colorGris;
+  color: variables.$colorGris;
+  box-sizing: border-box;
+  span{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 8px 0;
+    text-align: center;
+    color: #6f6f6f;
+  }
+    img{
+      display: block;
+      width: 80px;
+      margin: 20px auto;
+      filter: brightness(.266666666666666);
+    }
+}

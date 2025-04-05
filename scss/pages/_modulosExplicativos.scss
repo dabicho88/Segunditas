@@ -1,0 +1,119 @@
+@use '../base/variables';
+
+main {
+  .moduloExplicativo{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+    img{
+      width: 30%;
+      margin: 0;
+    }
+    p{
+      width: 60%;
+      height: auto;
+      margin: 0;
+      padding: 12px;
+    }
+  }
+}
+main {
+  .moduloExplicativo.full{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+    img{
+      width: 100%;
+    }
+    p{
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+}
+main {
+  .moduloExplicativo.flexx{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+    img{
+      width: 100%;
+      order: 2;
+      position: absolute;
+      top: 90px;
+      right: -20px;
+      max-width: 500px;
+    }
+    p{
+      width: 100%;
+      max-width: 700px;
+      order: 1;
+      margin: 0 0 90px 0;
+      background-color: #fff;
+      z-index: 1;
+      box-shadow: 0 0 20px -5px variables.$colorGris;
+    }
+  }
+}
+@media screen and (max-width:768px){
+main {
+  .moduloExplicativo{
+    img{
+      width: 90%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+    p{
+      width: 90%;
+      margin: 10px auto;
+    }
+  }
+}
+main {
+  .moduloExplicativo.full{
+    img{
+      max-width:unset;
+    }
+  }
+}
+main {
+  .moduloExplicativo.flexx{
+    img{
+      width: 100%;
+      order: 2;
+      position: relative;
+      top: -30px;
+      right: 0px;
+      max-width: unset;
+    }
+    p{
+      position: relative;
+      margin:0;
+    }
+  }
+}
+}
